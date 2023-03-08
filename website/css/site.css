@@ -1,3 +1,8 @@
+:root {
+  --appbar-background: #302d2a;
+  --appbar-text-color: #ffffff;
+  --appbar-background-hover: #468cff;
+}
 body {
   min-height: 100vh;
 }
