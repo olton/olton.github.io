@@ -1,0 +1,101 @@
+:root {}
+
+body {
+    min-height: 100vh;
+}
+
+img {
+    max-width: 100%;
+}
+
+.toast {
+    //transform: translateX(-50%);
+}
+
+#formActivity {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: none;
+}
+
+form.disabled {
+    opacity: .2;
+}
+
+form.disabled + #formActivity {
+    display: block;
+}
+
+#hero {
+    background: #1a1b1b url("../images/hero-bg.jpg") center center no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.avatar {
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.part-header {
+    border-left: 4px solid darkorange;
+    padding-left: 18px;
+    margin: 10px 0 20px;
+}
+
+.part-content {
+}
+
+.my-data, .my-data2 {
+    display: flex;
+    flex-flow: row wrap;
+    font-size: 14px;
+    line-height: 1.8;
+
+    li {
+        display: block;
+        flex-basis: 100%;
+
+        label {
+            display: inline-block;
+            min-width: 85px;
+            font-weight: bold;
+        }
+    }
+}
+
+.service-item {
+    box-shadow: 0 0 20px rgba(0,0,0,.1);
+    margin: 10px;
+    padding: 20px 40px;
+    height: 100%;
+}
+
+footer {
+    * {
+        color: #909090!important
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hero-inner {
+        width: 600px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .hero-inner {
+        width: 600px;
+    }
+
+    .my-data {
+        li {
+            flex-basis: 50%;
+        }
+    }
+}
+
