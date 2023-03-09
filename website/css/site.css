@@ -2,25 +2,14 @@
   --appbar-background: #302d2a;
   --appbar-text-color: #ffffff;
   --appbar-background-hover: #468cff;
+  --hamburger-color: #ffffff;
 }
 body {
   min-height: 100vh;
+  padding-top: 52px;
 }
 img {
   max-width: 100%;
-}
-#formActivity {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  display: none;
-}
-form.disabled {
-  opacity: 0.2;
-}
-form.disabled + #formActivity {
-  display: block;
 }
 #hero {
   background: #1a1b1b url("../images/hero-bg.jpg") center center no-repeat;
@@ -76,6 +65,20 @@ footer * {
   }
   .my-data li {
     flex-basis: 50%;
+  }
+}
+@media screen and (min-width: 768px) {
+  #artwork {
+    margin-top: -140px;
+    height: 400px;
+  }
+}
+.appbar-menu {
+  top: 24px;
+}
+@media screen and (min-width: 768px) {
+  .appbar-menu {
+    top: auto;
   }
 }
 /*# sourceMappingURL=site.css.map */

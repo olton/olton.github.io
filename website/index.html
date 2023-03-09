@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="metro/metro5.min.css">
+    <link rel="stylesheet" href="metro/metro5.css">
     <link rel="stylesheet" href="css/site.css">
     <title>Serhii Pimenov - Freelancer</title>
 </head>
-<body class="cloak" style="padding-top: 52px">
-    <div data-role="appbar" data-expand-point="lg" data-theme-toggle="false">
-        <a href="/" class="brand no-hover no-decor text-bold enlarge-2 fg-orange ml-2">{ pimenov.com.ua }</a>
+<body class="cloak">
+    <div data-role="appbar" data-expand-point="md" data-theme-toggle="false">
+        <button data-role="hamburger" data-active="chevron-down" onclick="$(this).toggleClass('active')"></button>
+        <a href="/" class="brand no-hover no-decor text-bold enlarge-2 fg-orange ml-2" style="line-height: 52px">{ pimenov.com.ua }</a>
         <ul class="appbar-menu ml-auto">
             <li><a href="https://blog.pimenov.com.ua">Blog</a></li>
             <li><a href="#about">About</a></li>
@@ -53,7 +54,7 @@
                 </div>
                 <div class="cell-md-9">
                     <div class="part-content pl-0 pl-10-md pr-0 pr-10-md">
-                        <h4 class="mt-0">I'm Serhii Pimenov and <span class="fg-orange">I Web Developer</span></h4>
+                        <h4 class="mt-0">I'm Serhii Pimenov and <span class="fg-orange">I'm Web Developer</span></h4>
                         <div class="mt-4" style="font-size: 14px; line-height: 1.8">
                             Hi! My name is Serhii Pimenov.
                             I am a Web Developer from Kyiv, Ukraine, and I'm very passionate and dedicated to my work.
@@ -70,7 +71,7 @@
                                 <li><label>Birthday:</label> 21.12.1972</li>
                                 <li><label>Age:</label> <span id="_age">47</span></li>
                                 <li><label>City:</label> Kiev, Ukraine</li>
-                                <li><label>Hobbies:</label> Dogs, Shooting</li>
+                                <li><label>Hobbies:</label> Dogs, Shooting, Guitar, Piano</li>
                                 <li><label>Study:</label> Taurida Institute of MCL</li>
                                 <li><label>Degree:</label> Bachelor</li>
                                 <li><label>Website:</label> <a href="https://pimenov.com.ua" class="fg-dark">pimenov.com.ua</a></li>
@@ -91,7 +92,7 @@
                 <div class="text-muted">My core skills</div>
             </div>
             <div class="row">
-                <div class="cell-lg-5">
+                <div class="cell-lg-5 order-2 order-1-lg">
                     <div>
                         <a href="https://profile.codersrank.io/user/olton/"><img src="images/skills.jpg"></a>
                     </div>
@@ -109,7 +110,7 @@
                         <div class="text-bold border bd-default p-4 d-flex flex-justify-center flex-align-center">NodeJS</div>
                     </div>
                 </div>
-                <div class="cell-lg-7 pl-0 pl-20-lg">
+                <div class="cell-lg-7 pl-0 pl-20-lg order-1 order-2-lg">
                     <div class="mt-0"><b>HTML (100%)</b> <small>10+ years of experience</small></div>
                     <div data-role="progress" data-value="100"></div>
 
@@ -330,7 +331,7 @@
                         </ul>
                     </div>
                     <div class="cell-md-6 text-center">
-                        <img src="images/artworks.jpg" alt="" style="margin-top: -140px; height: 400px;">
+                        <img src="images/artworks.jpg" alt="" id="artwork">
                     </div>
                 </div>
             </div>
@@ -350,7 +351,7 @@
         </div>
     </footer>
 
-    <script src="metro/metro5.min.js"></script>
+    <script src="metro/metro5.js"></script>
     <script src="js/site.js"></script>
 </body>
 </html>
