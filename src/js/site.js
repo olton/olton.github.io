@@ -24,6 +24,7 @@ import * as Container from "@olton/metro5/src/components/container"
 import * as Hamburger from "@olton/metro5/src/components/hamburger"
 import * as Button from "@olton/metro5/src/components/button"
 import * as Progress from "@olton/metro5/src/components/progress"
+import * as Cloak from "@olton/metro5/src/components/cloak"
 
 const age = $("#_age")
 age.html(datetime("1972-12-21").distance(datetime(), "year"))
